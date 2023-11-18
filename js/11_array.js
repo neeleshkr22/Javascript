@@ -48,5 +48,26 @@ heroes.push(heroes2) //will takes heroes2 array as a single data elment
 console.log(heroes);
 console.log(heroes[3][1]);
 
-heroes.concat(heroes2);
-console.log(heroes);
+const allheroes = heroes.concat(heroes2); //will retuen new array
+console.log(allheroes);
+
+//spread operator(...) will spread the element
+const all_new = [...heroes,...heroes2]
+console.log(all_new);
+
+//flat will take numbers and check in depth
+
+const an_array = [1,2,[2,4,5,6],7,8,9,[4,5,6],5]
+
+const real_array = an_array.flat(Infinity)
+console.log(real_array);
+
+
+console.log(Array.isArray("neelesh"))
+console.log(Array.from("neelesh")); //will convert it in array
+console.log(Array.from({name: "neelesh"})); //interesting
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+//.of returns a new array of an element
+console.log(Array.of(score1,score2,score3));
