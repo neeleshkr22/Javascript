@@ -92,6 +92,13 @@ console.log(Object.entries(whatsappUser));
 
 console.log(whatsappUser.hasOwnProperty('isloggedin'));//check if the property is there or not
 
+const course = {
+    course: "Javascript",
+    price: "999"
+}
+const {price}= course //destructuring
+console.log(price);
+
 
 
 
