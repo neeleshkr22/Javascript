@@ -1,0 +1,1 @@
+//Json is basically used for APIs and act/used as a object like structure
