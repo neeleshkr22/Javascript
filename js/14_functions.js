@@ -33,3 +33,8 @@ function loginUserMessage(username){
 
 console.log(loginUserMessage());   //when we don't pass any value it will show undefined
 
+function login(){
+    console.log("Hello Neelesh");
+}
+
+console.log(login);
