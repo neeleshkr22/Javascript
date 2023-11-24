@@ -35,6 +35,12 @@ console.log(loginUserMessage());   //when we don't pass any value it will show u
 
 function login(){
     console.log("Hello Neelesh kumar Rana");
-}
-
 console.log(login);
+
+    // function definition
+function calculateBill() {
+  // this is the function body
+  console.log("Running Calculate Bill!!");
+}
+// function call or function invocation
+calculateBill();
