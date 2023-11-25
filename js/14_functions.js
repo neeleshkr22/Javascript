@@ -44,3 +44,30 @@ function calculateBill() {
 }
 // function call or function invocation
 calculateBill();
+
+function calculateCartPrice(...num1 ){  //rest operator(...) for multiple values
+    return num1      
+}
+console.log(calculateCartPrice(200,2303,389));
+
+//function for object
+const user = {
+    username: "neelesh",
+    age: 18
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and age is ${anyobject.age}`);
+}
+
+handleObject(user);
+
+
+//array
+const mynewArray = [200,400,600]
+
+function returnSecondValue(getarray){
+    return getarray[1]
+}
+
+console.log(returnSecondValue(mynewArray));
