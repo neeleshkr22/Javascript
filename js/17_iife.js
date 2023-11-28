@@ -20,3 +20,16 @@
 
 // firstVariable and secondVariable will be discarded after the function is executed.
 
+for (var i = 0; i < 2; i++) {
+  const button = document.createElement("button");
+  button.innerText = `Button ${i}`;
+  button.onclick = (function (copyOfI) {
+    return function () {
+      console.log(copyOfI);
+    };
+  })(i);
+  document.body.appendChild(button);
+}
+console.log(i); // 2
+
+
