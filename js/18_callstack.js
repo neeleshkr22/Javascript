@@ -25,3 +25,7 @@ function addnum(num1,num2){
 console.log(addnum(2,6));
 let result1 = addnum(val1,val2);
 console.log(result1);
+
+//arrow function
+add = (num1, num2) => {
+}
