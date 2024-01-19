@@ -166,3 +166,16 @@ const mycoding = [
 mycoding.forEach((item) => {
     console.log(item.languageName);
 })
+
+
+const name = [
+    {
+        nameone : 'Superman',
+    },
+    {
+        nametwo : 'Flash'
+    }
+]
+name.foreach((item) => {
+    consople.log(item);
+})
