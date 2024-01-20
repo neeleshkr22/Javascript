@@ -149,6 +149,11 @@ coding.forEach((item, index, array) => {
     console.log(item, index, array);
 })
 
+const values = coding.forEach((item) => {  //for each do not return anything
+    return item;
+})
+console.log(values);
+
 const mycoding = [
     {
         languageName : 'Javascript',
@@ -167,15 +172,47 @@ mycoding.forEach((item) => {
     console.log(item.languageName);
 })
 
-
-const name = [
-    {
-        nameone : 'Superman',
-    },
-    {
-        nametwo : 'Flash'
-    }
-]
-name.foreach((item) => {
-    consople.log(item);
+//----------------------------------------------Filter---------------------------------------------------------------
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+const newNums = myNums.filter((num)=> {
+    return num > 4
 })
+/*const newNums = []
+myNums.forEach((num)=>{
+    if(num>4){
+        newNums.push(num)
+    }
+})*/
+console.log(newNums);
+
+
+const books = [{
+    bookname : 'bookone',
+    genere : 'History',
+    published : 1990
+},
+{
+    bookname : 'booktwo',
+    genere : 'Science',
+    published : 2002
+},
+{
+    bookname : 'bookthree',
+    genere : 'English',
+    published : 1997
+},
+{
+    bookname : 'bookfour',
+    genere : 'History',
+    published : 2002
+},
+{
+    bookname : 'bookfive',
+    genere : 'Fiction',
+    published : 2011
+}]
+
+const book = books.filter((bk) => {
+    return bk.published>=1990 && bk.genere == "History"
+})
+console.log(book);
