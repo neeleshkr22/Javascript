@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){ //function for adding new list 
+        const li = document.createElement('li'); //created a list
+        li.innerHTML = `${langName}` //added a innerHTML
+        document.querySelector('.language').appendChild(li) //added to language class 
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+    function addoptilang(langName){ //optimization method for lanngauge
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addoptilang('Rust')
+
+    //edit values 
+    const secondLang = document.querySelector("li:nth-child(2)")
+   // secondLang.innerHTML = "C++"
+    const newli = document.createElement('li')
+    newli.textContent = "C++"
+    secondLang.replaceWith(newli) //optimize approach
+
+    //secont method of edit
+    const firstchild = document.querySelector('li:first-child');
+    firstchild.outerHTML = "<li>JAVA</li>"
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove()
+
+</script>
+</html>
