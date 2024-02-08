@@ -1,0 +1,16 @@
+-javascript is of two type:-
+Synchronus (code execute line by line)  Default Js is Synchronus              
+Single threaded  (code execute in single thread thats why its a slow language)
+
+-Execution Context
+  Execute one line at a time
+  console log -> 1                       
+  console log -> 2                          (Each operation waits for the last one to complete before executing)
+
+Blocking code:-
+Block the flow of program. Read file sync
+
+Non blocking code:-
+Does not block execution. Read file async
+
+Js engine made from memory heap and call stack
