@@ -15,9 +15,9 @@ Objetc literal
 
 #Four Pillers
 -Abstarction - eg (fetch)
--Inheritence 
--Encapsulation
--Polymorphism
+-Inheritence - driving properties
+-Encapsulation - hiding data
+-Polymorphism - that has many form
 */
 
 //Object literal
