@@ -15,9 +15,9 @@ Objetc literal
 
 #Four Pillers
 -Abstarction - eg (fetch)
--Inheritence - driving properties
--Encapsulation - hiding data
--Polymorphism - that has many form
+-Inheritence 
+-Encapsulation
+-Polymorphism
 */
 
 //Object literal
@@ -37,4 +37,19 @@ console.log(`Name is ${user.getUserDetails()}`);
 console.log(this);                //give empty parenthesis and it will change
 
 //Constructor Function
-const date = new Date()
+//const promiseOne = new Promise();
+
+function User(username,logincount,isloggedin){
+    this.username = username              //left hand side value is variable   //right hand side is thenvalue that we pass
+    this.logincount = logincount;
+    this.isloggedin = isloggedin
+    this.greetings = ()=>{
+        console.log(this.username);
+    }
+    //return this;    implict defined already 
+}
+
+const userOne = new User("neelesh", 22, true);  //new keyword create empty object known as instance
+const userTwo = new User("Zord", 10,true)
+console.log(userOne.constructor);     //give refrence to itself
+console.log(userTwo);
