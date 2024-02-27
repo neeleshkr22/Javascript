@@ -53,3 +53,6 @@ const userOne = new User("neelesh", 22, true);  //new keyword create empty objec
 const userTwo = new User("Zord", 10,true)
 console.log(userOne.constructor);     //give refrence to itself
 console.log(userTwo);
+
+const USER =  new User("name", true);
+console.log(USER);
